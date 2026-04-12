@@ -131,3 +131,58 @@ func main() {
 		fmt.Printf("Error starting DLI-DGR chaincode: %v\n", err)
 	}
 }
+
+// LogSensitiveEvent stores sensitive identity data in a Private Data Collection
+// Only authorised peers can read the actual data; all peers see the transaction hash
+func (c *DLIGDRContract) LogSensitiveEvent(ctx contractapi.TransactionContextInterface,
+	recordID string, agency string, eventType string) error {
+
+	// Read sensitive data from transient map — never exposed on shared ledger
+	transientData, err := ctx.GetStub().GetTransient()
+	if err != nil {
+		return fmt.Errorf("failed to read transient data: %v", err)
+	}
+
+	sensitiveDetails, exists := transientData["sensitive_details"]
+	if !exists {
+		return fmt.Errorf("sensitive_details not found in transient data")
+	}
+
+	// Store full data in private collection — only Org1 peers can read this
+	privateRecord := IncidentRecord{
+		RecordID:  recordID,
+		Agency:    agency,
+		EventType: eventType,
+		Details:   string(sensitiveDetails),
+		Timestamp: time.Now().Format("2006-01-02 15:04:05"),
+		Status:    "ACTIVE",
+	}
+
+	privateJSON, err := json.Marshal(privateRecord)
+	if err != nil {
+		return err
+	}
+
+	// Write to private collection — Aadhaar biometric data stays here
+	err = ctx.GetStub().PutPrivateData("IdentityPrivateCollection", recordID, privateJSON)
+	if err != nil {
+		return fmt.Errorf("failed to write private data: %v", err)
+	}
+
+	// Write only non-sensitive metadata to shared ledger — all agencies see this
+	publicRecord := IncidentRecord{
+		RecordID:  recordID,
+		Agency:    agency,
+		EventType: eventType,
+		Details:   "[SENSITIVE DATA — stored in private collection, hash verified]",
+		Timestamp: time.Now().Format("2006-01-02 15:04:05"),
+		Status:    "ACTIVE",
+	}
+
+	publicJSON, err := json.Marshal(publicRecord)
+	if err != nil {
+		return err
+	}
+
+	return ctx.GetStub().PutState(recordID, publicJSON)
+}
