@@ -1,9 +1,0 @@
-NAMES                                                                                                    STATUS          PORTS
-dev-peer0.org1.example.com-dligdr_1.0-353ebab09e53aa39e77417c9071b916f26dea54a8d0027566c0aaf7b0952eed0   Up 18 minutes   
-dev-peer0.org2.example.com-dligdr_1.0-353ebab09e53aa39e77417c9071b916f26dea54a8d0027566c0aaf7b0952eed0   Up 18 minutes   
-peer0.org2.example.com                                                                                   Up 22 minutes   0.0.0.0:9051->9051/tcp, [::]:9051->9051/tcp, 7051/tcp, 0.0.0.0:9445->9445/tcp, [::]:9445->9445/tcp
-peer0.org1.example.com                                                                                   Up 22 minutes   0.0.0.0:7051->7051/tcp, [::]:7051->7051/tcp, 0.0.0.0:9444->9444/tcp, [::]:9444->9444/tcp
-orderer.example.com                                                                                      Up 22 minutes   0.0.0.0:7050->7050/tcp, [::]:7050->7050/tcp, 0.0.0.0:7053->7053/tcp, [::]:7053->7053/tcp, 0.0.0.0:9443->9443/tcp, [::]:9443->9443/tcp
-ca_orderer                                                                                               Up 22 minutes   0.0.0.0:9054->9054/tcp, [::]:9054->9054/tcp, 7054/tcp, 0.0.0.0:19054->19054/tcp, [::]:19054->19054/tcp
-ca_org2                                                                                                  Up 22 minutes   0.0.0.0:8054->8054/tcp, [::]:8054->8054/tcp, 7054/tcp, 0.0.0.0:18054->18054/tcp, [::]:18054->18054/tcp
-ca_org1                                                                                                  Up 22 minutes   0.0.0.0:7054->7054/tcp, [::]:7054->7054/tcp, 0.0.0.0:17054->17054/tcp, [::]:17054->17054/tcp
