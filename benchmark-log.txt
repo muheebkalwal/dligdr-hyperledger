@@ -1,0 +1,204 @@
+
+DLI-DGR Hyperledger Fabric Benchmark
+Started: Thu Apr 23 09:13:54 IST 2026
+Rounds  : 20 40 80 160 320 640 1280 2000
+Output  : /Users/muheeb_kalwal/dligdr-benchmark-results.csv
+
+
+========================================
+ROUND 1: 20 transactions
+========================================
+
+  BatchSize  : 20
+  Success    : 20
+  Failure    : 0
+  ElapsedSec : 1.86
+  TPS        : 10.75
+
+  Cooldown: 5s before next round...
+
+========================================
+ROUND 2: 40 transactions
+========================================
+
+  BatchSize  : 40
+  Success    : 40
+  Failure    : 0
+  ElapsedSec : 3.243
+  TPS        : 12.33
+
+  Cooldown: 5s before next round...
+
+========================================
+ROUND 3: 80 transactions
+========================================
+  Progress: 50/80 (success: 50, failure: 0)
+
+  BatchSize  : 80
+  Success    : 80
+  Failure    : 0
+  ElapsedSec : 6.36
+  TPS        : 12.58
+
+  Cooldown: 5s before next round...
+
+========================================
+ROUND 4: 160 transactions
+========================================
+  Progress: 50/160 (success: 50, failure: 0)
+  Progress: 100/160 (success: 100, failure: 0)
+  Progress: 150/160 (success: 150, failure: 0)
+
+  BatchSize  : 160
+  Success    : 160
+  Failure    : 0
+  ElapsedSec : 13.115
+  TPS        : 12.2
+
+  Cooldown: 5s before next round...
+
+========================================
+ROUND 5: 320 transactions
+========================================
+  Progress: 50/320 (success: 50, failure: 0)
+  Progress: 100/320 (success: 100, failure: 0)
+  Progress: 150/320 (success: 149, failure: 1)
+  Progress: 200/320 (success: 199, failure: 1)
+  Progress: 250/320 (success: 249, failure: 1)
+  Progress: 300/320 (success: 299, failure: 1)
+
+  BatchSize  : 320
+  Success    : 319
+  Failure    : 1
+  ElapsedSec : 25.516
+  TPS        : 12.5
+
+  Cooldown: 5s before next round...
+
+========================================
+ROUND 6: 640 transactions
+========================================
+  Progress: 50/640 (success: 50, failure: 0)
+  Progress: 100/640 (success: 100, failure: 0)
+  Progress: 150/640 (success: 150, failure: 0)
+  Progress: 200/640 (success: 200, failure: 0)
+  Progress: 250/640 (success: 250, failure: 0)
+  Progress: 300/640 (success: 300, failure: 0)
+  Progress: 350/640 (success: 350, failure: 0)
+  Progress: 400/640 (success: 400, failure: 0)
+  Progress: 450/640 (success: 450, failure: 0)
+  Progress: 500/640 (success: 500, failure: 0)
+  Progress: 550/640 (success: 550, failure: 0)
+  Progress: 600/640 (success: 600, failure: 0)
+
+  BatchSize  : 640
+  Success    : 640
+  Failure    : 0
+  ElapsedSec : 51.636
+  TPS        : 12.39
+
+  Cooldown: 5s before next round...
+
+========================================
+ROUND 7: 1280 transactions
+========================================
+  Progress: 50/1280 (success: 50, failure: 0)
+  Progress: 100/1280 (success: 100, failure: 0)
+  Progress: 150/1280 (success: 150, failure: 0)
+  Progress: 200/1280 (success: 200, failure: 0)
+  Progress: 250/1280 (success: 250, failure: 0)
+  Progress: 300/1280 (success: 300, failure: 0)
+  Progress: 350/1280 (success: 350, failure: 0)
+  Progress: 400/1280 (success: 400, failure: 0)
+  Progress: 450/1280 (success: 450, failure: 0)
+  Progress: 500/1280 (success: 500, failure: 0)
+  Progress: 550/1280 (success: 550, failure: 0)
+  Progress: 600/1280 (success: 600, failure: 0)
+  Progress: 650/1280 (success: 650, failure: 0)
+  Progress: 700/1280 (success: 700, failure: 0)
+  Progress: 750/1280 (success: 750, failure: 0)
+  Progress: 800/1280 (success: 800, failure: 0)
+  Progress: 850/1280 (success: 850, failure: 0)
+  Progress: 900/1280 (success: 900, failure: 0)
+  Progress: 950/1280 (success: 950, failure: 0)
+  Progress: 1000/1280 (success: 1000, failure: 0)
+  Progress: 1050/1280 (success: 1050, failure: 0)
+  Progress: 1100/1280 (success: 1100, failure: 0)
+  Progress: 1150/1280 (success: 1150, failure: 0)
+  Progress: 1200/1280 (success: 1200, failure: 0)
+  Progress: 1250/1280 (success: 1250, failure: 0)
+
+  BatchSize  : 1280
+  Success    : 1280
+  Failure    : 0
+  ElapsedSec : 105.529
+  TPS        : 12.13
+
+  Cooldown: 5s before next round...
+
+========================================
+ROUND 8: 2000 transactions
+========================================
+  Progress: 50/2000 (success: 50, failure: 0)
+  Progress: 100/2000 (success: 100, failure: 0)
+  Progress: 150/2000 (success: 150, failure: 0)
+  Progress: 200/2000 (success: 200, failure: 0)
+  Progress: 250/2000 (success: 250, failure: 0)
+  Progress: 300/2000 (success: 300, failure: 0)
+  Progress: 350/2000 (success: 350, failure: 0)
+  Progress: 400/2000 (success: 400, failure: 0)
+  Progress: 450/2000 (success: 450, failure: 0)
+  Progress: 500/2000 (success: 500, failure: 0)
+  Progress: 550/2000 (success: 550, failure: 0)
+  Progress: 600/2000 (success: 600, failure: 0)
+  Progress: 650/2000 (success: 649, failure: 1)
+  Progress: 700/2000 (success: 699, failure: 1)
+  Progress: 750/2000 (success: 749, failure: 1)
+  Progress: 800/2000 (success: 799, failure: 1)
+  Progress: 850/2000 (success: 849, failure: 1)
+  Progress: 900/2000 (success: 899, failure: 1)
+  Progress: 950/2000 (success: 949, failure: 1)
+  Progress: 1000/2000 (success: 999, failure: 1)
+  Progress: 1050/2000 (success: 1049, failure: 1)
+  Progress: 1100/2000 (success: 1099, failure: 1)
+  Progress: 1150/2000 (success: 1149, failure: 1)
+  Progress: 1200/2000 (success: 1199, failure: 1)
+  Progress: 1250/2000 (success: 1249, failure: 1)
+  Progress: 1300/2000 (success: 1299, failure: 1)
+  Progress: 1350/2000 (success: 1349, failure: 1)
+  Progress: 1400/2000 (success: 1399, failure: 1)
+  Progress: 1450/2000 (success: 1449, failure: 1)
+  Progress: 1500/2000 (success: 1499, failure: 1)
+  Progress: 1550/2000 (success: 1549, failure: 1)
+  Progress: 1600/2000 (success: 1599, failure: 1)
+  Progress: 1650/2000 (success: 1649, failure: 1)
+  Progress: 1700/2000 (success: 1699, failure: 1)
+  Progress: 1750/2000 (success: 1749, failure: 1)
+  Progress: 1800/2000 (success: 1799, failure: 1)
+  Progress: 1850/2000 (success: 1849, failure: 1)
+  Progress: 1900/2000 (success: 1899, failure: 1)
+  Progress: 1950/2000 (success: 1949, failure: 1)
+  Progress: 2000/2000 (success: 1999, failure: 1)
+
+  BatchSize  : 2000
+  Success    : 1999
+  Failure    : 1
+  ElapsedSec : 162.429
+  TPS        : 12.31
+
+========================================
+BENCHMARK COMPLETE
+Finished: Thu Apr 23 09:20:40 IST 2026
+Results saved to: /Users/muheeb_kalwal/dligdr-benchmark-results.csv
+========================================
+
+Results preview:
+Round,BatchSize,Success,Failure,ElapsedSec,TPS
+1,20,20,0,1.86,10.75
+2,40,40,0,3.243,12.33
+3,80,80,0,6.36,12.58
+4,160,160,0,13.115,12.2
+5,320,319,1,25.516,12.5
+6,640,640,0,51.636,12.39
+7,1280,1280,0,105.529,12.13
+8,2000,1999,1,162.429,12.31
